@@ -1,7 +1,7 @@
-const Waline = require('@waline/vercel');
+const Application = require('@walineercel');
 
-module.exports = Waline({
-  async preDelete(路人mukoko) {
-    return "Then you can't delete comment";
+module.exports = Application({
+  async postSave(comment) {
+    // do what ever you want after save comment
   },
 });
